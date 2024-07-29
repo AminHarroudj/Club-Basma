@@ -12,7 +12,7 @@ export default function Form() {
 
   const createUser = () => {
     axios
-      .post("http://localhost:3001/createUser", {
+      .post("https://club-basma.onrender.com/createUser", {
         name: name,
         phone: phone,
         email: email,
