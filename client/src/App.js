@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import bg from "./assets/bg4.png";
 import Home from "./components/home";
 import Footer from "./components/footer";
 import Admin from "./components/admin";
@@ -9,10 +8,7 @@ function App() {
   return (
     <Router>
       <div
-        className="App text-white"
-        style={{
-          backgroundImage: `url(${bg})`,
-        }}
+        className="App text-white bg-sky-400"
         id="home"
       >
         {/* navbar */}

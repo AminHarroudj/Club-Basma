@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="bg-blue-800 bg-opacity-70 flex justify-between items-center py-2 px-4 lg:px-12 lg:py-4 fixed left-0 right-0">
+    <div className="bg-blue-800 bg-opacity-70 flex justify-between items-center py-2 px-4 lg:px-12 lg:py-4 fixed left-0 right-0 z-50">
       <a href="#home" className="text-2xl font-semibold text-white lg:text-3xl">
         اترك <span className="text-sky-500">بصمتك</span>
       </a>
