@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Admin() {
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users")
+      .get("https://club-basma.onrender.com/users")
       .then(function (response) {
         setUsers(response.data);
       })
