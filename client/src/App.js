@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div
-        className="App text-white bg-sky-400"
+        className="App text-white bg-sky-500 bg-opacity-70"
         id="home"
       >
         {/* navbar */}
