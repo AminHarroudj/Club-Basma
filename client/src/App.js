@@ -1,27 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import bg from "./assets/bg4.png";
 import Home from "./components/home";
-import About from "./components/about";
-import Activities from "./components/activities";
 import Footer from "./components/footer";
-import Form from "./components/form";
+import Admin from "./components/admin";
 
 function App() {
   return (
-    <div
-      className="App text-white"
-      style={{
-        backgroundImage: `url(${bg})`,
-      }}
-      id="home"
-    >
-      <Navbar />
-      <Home />
-      <About />
-      <Activities />
-      <Form />
-      <Footer />
-    </div>
+    <Router>
+      <div
+        className="App text-white"
+        style={{
+          backgroundImage: `url(${bg})`,
+        }}
+        id="home"
+      >
+        {/* navbar */}
+        <Navbar />
+        {/* end navbar */}
+
+        <Routes>
+          <Route path="/" exact Component={Home} />
+          <Route path="/admin" Component={Admin}/>
+        </Routes>
+
+        {/* footer */}
+        <Footer />
+        {/* end footer */}
+      </div>
+    </Router>
   );
 }
 
