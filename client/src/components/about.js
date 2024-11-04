@@ -1,4 +1,5 @@
 import aboutImg from "./about.jpg"
+import { useRef } from "react"
 
 export default function About(){
     return(

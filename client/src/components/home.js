@@ -2,10 +2,13 @@ import basmaImg from "./basma.jpg";
 import About from "./about";
 import Activities from "./activities";
 import Form from "./form";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <div
         className="flex flex-col justify-center items-center text-center gap-8 p-4 pt-24"
         id="home"
@@ -23,6 +26,7 @@ export default function Home() {
       <About />
       <Activities />
       <Form />
+      <Footer />
     </div>
   );
 }

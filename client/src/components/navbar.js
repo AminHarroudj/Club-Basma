@@ -1,5 +1,5 @@
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -41,9 +41,11 @@ export default function Navbar() {
         </ul>
         <hr className="border-1 w-full border-gray-300 lg:w-px lg:h-8 lg:bg-gray-400" />
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-4">
-          <a href="#form"><button className="text-lg hover:text-sky-500 lg:text-lg font-medium lg:text-white lg:bg-sky-500 lg:rounded-full lg:py-1 lg:px-4 lg:hover:text-white lg:hover:bg-sky-600">
-            اشتراك
-          </button></a>
+          <a href="#form">
+            <button className="text-lg hover:text-sky-500 lg:text-lg font-medium lg:text-white lg:bg-sky-500 lg:rounded-full lg:py-1 lg:px-4 lg:hover:text-white lg:hover:bg-sky-600">
+              اشتراك
+            </button>
+          </a>
         </div>
       </div>
       <FaBars
